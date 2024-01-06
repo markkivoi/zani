@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE ANIMATION</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <form method="POST" action="dataset.php">
+    <h1><marquee behavior="" direction="right"> BUY A LAND........   BUILD A CITY........  OWN A CITY............  BE A BOSS</marquee> OWN <span> A </span>  CITY!!!!!!</h1> 
+     <div class="container">
+       <div class="images">
+       </div>
+         <div class="calculate">
+            <h1>Calculate Size & Price </h1>
+
+            
+            <label for="">Plot No: </label>
+            <input type="text" name="plotno" id="plotno" class="textarea" autocomplete="off"><br><br>
+          
+            <label for="">Length: </label>
+            <input type="text" name="length" id="length" autocomplete="off"><br><br>
+            
+    
+            <label for="">Width: </label>
+            <input type="text" name="width" id="width" class="textarea" autocomplete="off"><br><br>
+    
+            <label for="">Area (SQm): </label>
+            <input type="text" name="area" id="area" class="textarea" readonly><br><br>
+    
+            <label for="">Price(Ksh): </label>
+            <input type="text" name="price" id="price" class="textarea" readonly> 
+    
+            <button type="button" onclick="both()"> Calculate</button>
+
+            <button type="submit" onclick="both()" name="submit"> submit</button>
+
+            <button type="button" class="view"><a href="applicants.php">View</a></button>
+         </div>
+        
+    </div>
+    
+  </form>
+  
+  <script src="app.js"></script>
+</body>
+</html>

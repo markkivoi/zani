@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: darkblue;
+}
+
+form{
+    margin-left: 30%;
+    margin-top: 10%;
+    width:350px;
+    height:400px;
+    background-color: white;
+    border-radius: 10px;
+    background: rgb(230, 209, 240);
+    box-shadow: 10px 10px 8px #888888;
+}
+input{
+    margin-top:30px;
+    margin-left: 60px;
+    width:200px;
+    height: 27px;
+    border-radius: 10px;
+}
+button{
+    margin-top: 50px;
+    margin-left:100px;
+    background-color: yellow;
+    width: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: transform linear .4s;
+    
+}

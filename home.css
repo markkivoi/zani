@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: darkblue;
+}
+h1{
+    margin-left: 20%;
+    margin-top: 5%;
+    color: yellow;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    
+}
+.images{
+    width: 600px;
+    height: 300px;
+    margin-left: 10%;
+    box-shadow: 1px 2px 10px white;
+    background-image: url(image2.jpg);
+    background-position: center;
+    animation: slider 30s linear;
+}
+.calculate{
+    justify-content: space-between;
+    font-size: 20px;
+    width: 40%;
+}
+.calculate h1{
+    margin-left: 5%;
+    margin-top: -10%;
+    font-size: 35px;
+    font-family: sans-serif;
+    color:white;
+}
+label{
+    margin-left: 15%;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+input{
+    height: 30px;
+    border-radius: 10px;
+    text-align: right;
+}
+.textarea{
+    text-align: justify;
+}
+.view button,a{
+    color: black;
+    text-decoration: none;
+  }
+button{
+    margin-top: 5%;
+    margin-left: 20%;
+    justify-content: space-between;
+    background-color: yellow;
+    width: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: transform linear .4s;
+    
+}
+button:hover{
+    background-color: yellowgreen;
+    transition:5s;
+    transform: scaleX(1.2);
+}
+
+
+@keyframes slider{
+    0%{
+        background-image: url(image2.jpg);
+    }
+    35%{
+        background-image: url(image1.jpg);
+
+    }
+    75%{
+        background-image: url(image3.jpg);
+    }
+    100%{
+        background-image: url(image1.jpg);
+    }
+}
+
+@media all and (max-width: 1024px){
+    h1{
+        margin-left:35%;
+    }
+    .container{
+        display: block;
+    }
+    .images{
+        margin-left: 20%;
+    }
+    .calculate{
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+}
